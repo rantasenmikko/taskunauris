@@ -1,5 +1,5 @@
 import { useAtomValue } from 'jotai';
-import { finnishTimeAtom, finnishGreetingAtom } from '../atoms/dateTimeAtoms';
+import { finnishTimeAtom, finnishGreetingAtom } from '../../atoms/dateTimeAtoms';
 import './TimeComponent.css';
 
 const TimeComponent = () => {

@@ -1,18 +1,26 @@
 .datetime-card {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  padding: 2.5rem;
-  border-radius: 16px;
+  padding: 3.5rem;
+  border-radius: 20px;
   color: white;
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.25);
-  max-width: 400px;
+  box-shadow: 0 12px 35px rgba(102, 126, 234, 0.25);
+  max-width: 550px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .datetime-divider {
   height: 1px;
   background: rgba(255, 255, 255, 0.2);
   width: 100%;
+}
+
+@media (max-width: 767px) {
+  .datetime-card {
+    padding: 2.5rem;
+    max-width: 90%;
+    gap: 1.5rem;
+  }
 }
