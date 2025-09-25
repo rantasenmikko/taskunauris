@@ -1,0 +1,38 @@
+.time-component {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.time-main {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0.1em;
+  opacity: 0.95;
+}
+
+.time-greeting {
+  font-size: 1rem;
+  opacity: 0.8;
+  font-weight: 300;
+  font-style: italic;
+}
+
+@media (max-width: 767px) {
+  .time-main {
+    font-size: 1.8rem;
+  }
+  
+  .time-greeting {
+    font-size: 0.9rem;
+  }
+}
