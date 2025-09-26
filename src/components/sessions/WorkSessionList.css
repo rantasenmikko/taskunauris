@@ -15,25 +15,69 @@
 .session-list-container {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 1.5rem;
+}
+
+.task-group {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+}
+
+.task-group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f3f4f6;
+}
+
+.task-name {
+  color: #1f2937;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.task-session-count {
+  background: #f3f4f6;
+  color: #6b7280;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.25rem 0.6rem;
+  border-radius: 12px;
 }
 
 .session-item {
   background: #f8fafc;
   border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  padding: 1rem;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: 1rem;
-  align-items: center;
+  border-radius: 8px;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
   transition: all 0.2s ease;
+}
+
+.session-item:last-child {
+  margin-bottom: 0;
 }
 
 .session-item:hover {
   background: #f1f5f9;
   border-color: #cbd5e1;
   transform: translateY(-1px);
+}
+
+.session-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1rem;
+  align-items: center;
 }
 
 .session-date {
@@ -70,8 +114,20 @@
   min-width: 90px;
 }
 
+.session-description {
+  font-style: italic;
+  color: #6b7280;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-top: 0.25rem;
+  padding: 0.5rem;
+  background: #ffffff;
+  border-radius: 6px;
+  border-left: 3px solid #e5e7eb;
+}
+
 @media (max-width: 767px) {
-  .session-item {
+  .session-header {
     grid-template-columns: 1fr;
     gap: 0.5rem;
     text-align: center;

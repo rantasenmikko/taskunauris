@@ -1,0 +1,30 @@
+.task-reopen-button {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  margin-top: 0.5rem;
+  box-shadow: 0 1px 4px rgba(16, 185, 129, 0.3);
+}
+
+.task-reopen-button:hover {
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.4);
+  transform: translateY(-1px);
+}
+
+.task-reopen-button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 767px) {
+  .task-reopen-button {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+  }
+}

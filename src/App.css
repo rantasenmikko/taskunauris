@@ -1,8 +1,46 @@
+/* Color Palette */
+:root {
+  /* Main Colors */
+  --color-white: #ffffff;
+  --color-off-white: #f8f8f8;
+  --color-gold: #bf8f00;
+  --color-gold-light: #d4a017;
+  --color-brass: #8b6914;
+  --color-brass-dark: #704f0a;
+  
+  /* Action Colors */
+  --color-sage: #4f7942;
+  --color-sage-light: #6b8f5a;
+  --color-terracotta: #a0522d;
+  --color-terracotta-light: #cd853f;
+  
+  /* Neutral Colors */
+  --color-charcoal: #2c2c2c;
+  --color-warm-gray: #5c5c5c;
+  --color-light-gray: #d0d0d0;
+  --color-bg: #f0f0f0;
+  
+  /* Text Colors */
+  --text-primary: #1a1a1a;
+  --text-secondary: #404040;
+  --text-muted: #666666;
+}
+
+/* Global Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* App root styling */
 .app {
   min-height: 100vh;
-  background: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
 }

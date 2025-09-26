@@ -1,0 +1,23 @@
+.create-task-button {
+  background: var(--color-sage);
+  color: var(--color-white);
+  border: none;
+  border-radius: 16px;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  box-shadow: 0 4px 20px rgba(79, 121, 66, 0.4);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .create-task-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}

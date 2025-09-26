@@ -1,0 +1,22 @@
+.task-complete-button {
+  background: var(--color-brass);
+  color: var(--color-white);
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+  margin-top: 0.75rem;
+  box-shadow: 0 2px 12px rgba(139, 105, 20, 0.4);
+  width: auto;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .task-complete-button {
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+  }
+}
